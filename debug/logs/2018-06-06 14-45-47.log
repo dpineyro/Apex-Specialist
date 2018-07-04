@@ -1,0 +1,101 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+14:45:46.0 (860691)|USER_INFO|[EXTERNAL]|005f4000001pRJZ|danilofp13@curious-moose-219315.com|Hora de Argentina|GMT-03:00
+14:45:46.0 (947159)|EXECUTION_STARTED
+14:45:46.0 (952064)|CODE_UNIT_STARTED|[EXTERNAL]|01pf400000Gbx3c|WarehouseCalloutServiceTest.testWarehouse
+14:45:46.0 (1093413)|VARIABLE_SCOPE_BEGIN|[9]|WarehouseCalloutServiceTest.expectedCost|Integer|false|true
+14:45:46.0 (1105575)|VARIABLE_SCOPE_BEGIN|[8]|WarehouseCalloutServiceTest.expectedLifespan|Integer|false|true
+14:45:46.0 (1112348)|VARIABLE_SCOPE_BEGIN|[7]|WarehouseCalloutServiceTest.expectedMaintenanceperiod|Integer|false|true
+14:45:46.0 (1131762)|VARIABLE_SCOPE_BEGIN|[5]|WarehouseCalloutServiceTest.expectedName|String|false|true
+14:45:46.0 (1139265)|VARIABLE_SCOPE_BEGIN|[10]|WarehouseCalloutServiceTest.expectedQuantity|Integer|false|true
+14:45:46.0 (1149757)|VARIABLE_SCOPE_BEGIN|[4]|WarehouseCalloutServiceTest.expectedReplacement|Boolean|false|true
+14:45:46.0 (1157716)|VARIABLE_SCOPE_BEGIN|[6]|WarehouseCalloutServiceTest.expectedSku|String|false|true
+14:45:46.0 (1320021)|HEAP_ALLOCATE|[72]|Bytes:3
+14:45:46.0 (1379042)|HEAP_ALLOCATE|[77]|Bytes:152
+14:45:46.0 (1396778)|HEAP_ALLOCATE|[342]|Bytes:408
+14:45:46.0 (1411407)|HEAP_ALLOCATE|[355]|Bytes:408
+14:45:46.0 (1422945)|HEAP_ALLOCATE|[467]|Bytes:48
+14:45:46.0 (1452582)|HEAP_ALLOCATE|[139]|Bytes:6
+14:45:46.0 (1468073)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:35
+14:45:46.0 (1491216)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:17
+14:45:46.0 (1518337)|VARIABLE_ASSIGNMENT|[EXTERNAL]|WarehouseCalloutServiceTest.expectedName|"Generator 1000 kW"
+14:45:46.0 (1526932)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:6
+14:45:46.0 (1534301)|VARIABLE_ASSIGNMENT|[EXTERNAL]|WarehouseCalloutServiceTest.expectedSku|"100003"
+14:45:46.0 (1583948)|METHOD_ENTRY|[2]|01pf400000Gbx3c|WarehouseCalloutServiceTest.WarehouseCalloutServiceTest()
+14:45:46.0 (1591059)|STATEMENT_EXECUTE|[2]
+14:45:46.0 (1595682)|STATEMENT_EXECUTE|[2]
+14:45:46.0 (1597305)|STATEMENT_EXECUTE|[4]
+14:45:46.0 (1628897)|HEAP_ALLOCATE|[50]|Bytes:5
+14:45:46.0 (1653924)|HEAP_ALLOCATE|[56]|Bytes:5
+14:45:46.0 (1661574)|HEAP_ALLOCATE|[64]|Bytes:7
+14:45:46.0 (1682233)|HEAP_ALLOCATE|[4]|Bytes:5
+14:45:46.0 (1692879)|VARIABLE_ASSIGNMENT|[4]|WarehouseCalloutServiceTest.expectedReplacement|true
+14:45:46.0 (1698064)|STATEMENT_EXECUTE|[7]
+14:45:46.0 (1702684)|HEAP_ALLOCATE|[7]|Bytes:4
+14:45:46.0 (1710065)|VARIABLE_ASSIGNMENT|[7]|WarehouseCalloutServiceTest.expectedMaintenanceperiod|365
+14:45:46.0 (1714347)|STATEMENT_EXECUTE|[8]
+14:45:46.0 (1716746)|HEAP_ALLOCATE|[8]|Bytes:4
+14:45:46.0 (1721512)|VARIABLE_ASSIGNMENT|[8]|WarehouseCalloutServiceTest.expectedLifespan|120
+14:45:46.0 (1725075)|STATEMENT_EXECUTE|[9]
+14:45:46.0 (1727200)|HEAP_ALLOCATE|[9]|Bytes:4
+14:45:46.0 (1731893)|VARIABLE_ASSIGNMENT|[9]|WarehouseCalloutServiceTest.expectedCost|5000
+14:45:46.0 (1735252)|STATEMENT_EXECUTE|[10]
+14:45:46.0 (1737657)|HEAP_ALLOCATE|[10]|Bytes:4
+14:45:46.0 (1742703)|VARIABLE_ASSIGNMENT|[10]|WarehouseCalloutServiceTest.expectedQuantity|5
+14:45:46.0 (1761413)|METHOD_EXIT|[2]|WarehouseCalloutServiceTest
+14:45:46.0 (1906929)|STATEMENT_EXECUTE|[12]
+14:45:46.0 (1909030)|STATEMENT_EXECUTE|[13]
+14:45:46.0 (1912649)|HEAP_ALLOCATE|[13]|Bytes:22
+14:45:46.0 (2001567)|HEAP_ALLOCATE|[13]|Bytes:27
+14:45:46.0 (2010878)|SYSTEM_METHOD_ENTRY|[1]|Type.Type()
+14:45:46.0 (2015108)|STATEMENT_EXECUTE|[1]
+14:45:46.0 (2021660)|SYSTEM_METHOD_EXIT|[1]|Type
+14:45:46.0 (2028355)|HEAP_ALLOCATE|[13]|Bytes:8
+14:45:46.0 (2043703)|HEAP_ALLOCATE|[13]|Bytes:8
+14:45:46.0 (2049885)|VARIABLE_SCOPE_BEGIN|[4]|this|System.Type|true|false
+14:45:46.0 (2104272)|VARIABLE_ASSIGNMENT|[4]|this|{}|0x703b74ef
+14:45:46.0 (2111498)|VARIABLE_SCOPE_BEGIN|[4]|apextype|java:common.apex.runtime.ApexObjectType|true|false
+14:45:46.0 (2237435)|VARIABLE_ASSIGNMENT|[4]|apextype|"System.HttpCalloutMock"|0x36dd25f1
+14:45:46.0 (2319318)|HEAP_ALLOCATE|[13]|Bytes:8
+14:45:46.0 (6217929)|METHOD_ENTRY|[1]|01pf400000Gbx3b|WarehouseCalloutServiceMock.WarehouseCalloutServiceMock()
+14:45:46.0 (6228504)|STATEMENT_EXECUTE|[1]
+14:45:46.0 (6233022)|STATEMENT_EXECUTE|[1]
+14:45:46.0 (6237744)|METHOD_EXIT|[1]|WarehouseCalloutServiceMock
+14:45:46.0 (6252522)|HEAP_ALLOCATE|[13]|Bytes:4
+14:45:46.0 (6296407)|CONSTRUCTOR_ENTRY|[13]|01pf400000Gbx3b|<init>()
+14:45:46.0 (6333611)|VARIABLE_SCOPE_BEGIN|[1]|this|WarehouseCalloutServiceMock|true|false
+14:45:46.0 (6367211)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x2489e9a0
+14:45:46.0 (6386299)|STATEMENT_EXECUTE|[1]
+14:45:46.0 (6405245)|CONSTRUCTOR_EXIT|[13]|01pf400000Gbx3b|<init>()
+14:45:46.0 (6446889)|HEAP_ALLOCATE|[13]|Bytes:63
+14:45:46.0 (6455744)|SYSTEM_METHOD_ENTRY|[1]|Test.Test()
+14:45:46.0 (6459467)|STATEMENT_EXECUTE|[1]
+14:45:46.0 (6463961)|SYSTEM_METHOD_EXIT|[1]|Test
+14:45:46.0 (6493449)|METHOD_ENTRY|[13]||System.Test.setMock(System.Type, Object)
+14:45:46.0 (6941583)|METHOD_EXIT|[13]||System.Test.setMock(System.Type, Object)
+14:45:46.0 (6998758)|FATAL_ERROR|System.TypeException: Mock object doesn't implement the supplied interface
+
+Class.System.Test.setMock: line 57, column 1
+Class.WarehouseCalloutServiceTest.testWarehouse: line 13, column 1
+14:45:46.0 (7012165)|FATAL_ERROR|System.TypeException: Mock object doesn't implement the supplied interface
+
+Class.System.Test.setMock: line 57, column 1
+Class.WarehouseCalloutServiceTest.testWarehouse: line 13, column 1
+14:45:46.7 (7020315)|CUMULATIVE_LIMIT_USAGE
+14:45:46.7 (7020315)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:45:46.7 (7020315)|CUMULATIVE_LIMIT_USAGE_END
+
+14:45:46.0 (7064724)|CODE_UNIT_FINISHED|WarehouseCalloutServiceTest.testWarehouse
+14:45:46.0 (7954146)|EXECUTION_FINISHED

@@ -1,0 +1,66 @@
+34.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: // grab the id, we know this class exists as tested for it already
+Execute Anonymous: Id apexClassId = [SELECT Id from ApexClass where Name = 'WarehouseSyncSchedule'][0].Id;
+Execute Anonymous: // ensure there is a record for a scheduledapex job for the class
+Execute Anonymous: Integer count = [select count() from AsyncApexJob where ApexClassId = :apexClassId and JobType = 'ScheduledApex'];
+Execute Anonymous: System.assert(count > 0);
+14:37:56.1 (1147613)|USER_INFO|[EXTERNAL]|005f4000001pRJZ|danilofp13@curious-moose-219315.com|Hora de Argentina|GMT-03:00
+14:37:56.1 (1176463)|EXECUTION_STARTED
+14:37:56.1 (1183952)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+14:37:56.1 (1320298)|VARIABLE_SCOPE_BEGIN|[2]|apexClassId|Id|false|false
+14:37:56.1 (1343890)|VARIABLE_SCOPE_BEGIN|[4]|count|Integer|false|false
+14:37:56.1 (1455252)|HEAP_ALLOCATE|[72]|Bytes:3
+14:37:56.1 (1490567)|HEAP_ALLOCATE|[77]|Bytes:152
+14:37:56.1 (1505737)|HEAP_ALLOCATE|[342]|Bytes:408
+14:37:56.1 (1518082)|HEAP_ALLOCATE|[355]|Bytes:408
+14:37:56.1 (1529182)|HEAP_ALLOCATE|[467]|Bytes:48
+14:37:56.1 (1558397)|HEAP_ALLOCATE|[139]|Bytes:6
+14:37:56.1 (1576346)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+14:37:56.1 (1707454)|STATEMENT_EXECUTE|[1]
+14:37:56.1 (1710010)|STATEMENT_EXECUTE|[2]
+14:37:56.1 (1713491)|HEAP_ALLOCATE|[2]|Bytes:61
+14:37:56.1 (1731114)|HEAP_ALLOCATE|[2]|Bytes:4
+14:37:56.1 (1770408)|HEAP_ALLOCATE|[50]|Bytes:5
+14:37:56.1 (1790716)|HEAP_ALLOCATE|[56]|Bytes:5
+14:37:56.1 (1797861)|HEAP_ALLOCATE|[64]|Bytes:7
+14:37:56.1 (1995450)|SOQL_EXECUTE_BEGIN|[2]|Aggregations:0|SELECT Id FROM ApexClass WHERE Name = 'WarehouseSyncSchedule'
+14:37:56.1 (18504309)|SOQL_EXECUTE_END|[2]|Rows:1
+14:37:56.1 (18544778)|HEAP_ALLOCATE|[2]|Bytes:8
+14:37:56.1 (18563389)|HEAP_ALLOCATE|[2]|Bytes:29
+14:37:56.1 (18709082)|HEAP_ALLOCATE|[2]|Bytes:8
+14:37:56.1 (18773436)|HEAP_ALLOCATE|[2]|Bytes:8
+14:37:56.1 (19037243)|VARIABLE_ASSIGNMENT|[2]|apexClassId|"01pf400000Gbx3dAAB"
+14:37:56.1 (19047383)|STATEMENT_EXECUTE|[4]
+14:37:56.1 (19054639)|HEAP_ALLOCATE|[4]|Bytes:93
+14:37:56.1 (19074902)|HEAP_ALLOCATE|[4]|Bytes:4
+14:37:56.1 (19086353)|HEAP_ALLOCATE|[4]|Bytes:7
+14:37:56.1 (19361141)|SOQL_EXECUTE_BEGIN|[4]|Aggregations:0|SELECT COUNT() FROM AsyncApexJob WHERE (ApexClassId = :tmpVar1 AND JobType = 'ScheduledApex')
+14:37:56.1 (29784377)|SOQL_EXECUTE_END|[4]|Rows:0
+14:37:56.1 (29814179)|HEAP_ALLOCATE|[4]|Bytes:4
+14:37:56.1 (29840796)|HEAP_ALLOCATE|[4]|Bytes:4
+14:37:56.1 (29874264)|VARIABLE_ASSIGNMENT|[4]|count|0
+14:37:56.1 (29884029)|STATEMENT_EXECUTE|[5]
+14:37:56.1 (30001617)|EXCEPTION_THROWN|[5]|System.AssertException: Assertion Failed
+14:37:56.1 (30123483)|HEAP_ALLOCATE|[5]|Bytes:20
+14:37:56.1 (30224351)|FATAL_ERROR|System.AssertException: Assertion Failed
+
+AnonymousBlock: line 5, column 1
+14:37:56.30 (30264181)|CUMULATIVE_LIMIT_USAGE
+14:37:56.30 (30264181)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:37:56.30 (30264181)|CUMULATIVE_LIMIT_USAGE_END
+
+14:37:56.1 (30300342)|CODE_UNIT_FINISHED|execute_anonymous_apex
+14:37:56.1 (31146838)|EXECUTION_FINISHED

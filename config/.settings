@@ -1,0 +1,17 @@
+{
+    "projectName": "Apex--Specialist",
+    "username": "danilofp13@curious-moose-219315.com",
+    "id": "13560c60-6832-11e8-8ccd-e3ed3200947d",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://curious-moose-219315-dev-ed.my.salesforce.com",
+    "workspace": "C:\\Users\\dpineyro\\Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}

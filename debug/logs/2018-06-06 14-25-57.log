@@ -1,0 +1,74 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+14:25:55.0 (311328)|USER_INFO|[EXTERNAL]|005f4000001pRJZ|danilofp13@curious-moose-219315.com|Hora de Argentina|GMT-03:00
+14:25:55.0 (347940)|EXECUTION_STARTED
+14:25:55.0 (354343)|CODE_UNIT_STARTED|[EXTERNAL]|FutureHandler - state load
+14:25:55.0 (1574656)|CODE_UNIT_FINISHED|FutureHandler - state load
+14:25:55.0 (2391292)|EXECUTION_FINISHED
+14:25:55.10 (10181207)|USER_INFO|[EXTERNAL]|005f4000001pRJZ|danilofp13@curious-moose-219315.com|Hora de Argentina|GMT-03:00
+14:25:55.10 (10205789)|EXECUTION_STARTED
+14:25:55.10 (10210233)|CODE_UNIT_STARTED|[EXTERNAL]|01pf400000Gbx3a|WarehouseCalloutService.runWarehouseEquipmentSync
+14:25:55.10 (10324060)|VARIABLE_SCOPE_BEGIN|[4]|WarehouseCalloutService.GET|String|false|true
+14:25:55.10 (10521530)|VARIABLE_SCOPE_BEGIN|[3]|WarehouseCalloutService.WAREHOUSE_URL|String|false|true
+14:25:55.10 (10644545)|HEAP_ALLOCATE|[72]|Bytes:3
+14:25:55.10 (10693218)|HEAP_ALLOCATE|[77]|Bytes:152
+14:25:55.10 (10707241)|HEAP_ALLOCATE|[342]|Bytes:408
+14:25:55.10 (10718721)|HEAP_ALLOCATE|[355]|Bytes:408
+14:25:55.10 (10729117)|HEAP_ALLOCATE|[467]|Bytes:48
+14:25:55.10 (10754710)|HEAP_ALLOCATE|[139]|Bytes:6
+14:25:55.10 (10769436)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1
+14:25:55.10 (10793450)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:3
+14:25:55.10 (10822822)|VARIABLE_ASSIGNMENT|[EXTERNAL]|WarehouseCalloutService.GET|"GET"
+14:25:55.10 (10828839)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:50
+14:25:55.10 (10839047)|VARIABLE_ASSIGNMENT|[EXTERNAL]|WarehouseCalloutService.WAREHOUSE_URL|"https://th-superbadg (30 more) ..."
+14:25:55.10 (10862221)|METHOD_ENTRY|[1]|01pf400000Gbx3a|WarehouseCalloutService.WarehouseCalloutService()
+14:25:55.10 (10869742)|STATEMENT_EXECUTE|[1]
+14:25:55.10 (10874825)|STATEMENT_EXECUTE|[1]
+14:25:55.10 (10904988)|HEAP_ALLOCATE|[50]|Bytes:5
+14:25:55.10 (10922745)|HEAP_ALLOCATE|[56]|Bytes:5
+14:25:55.10 (10930074)|HEAP_ALLOCATE|[64]|Bytes:7
+14:25:55.10 (11277200)|SYSTEM_MODE_ENTER|false
+14:25:55.10 (11292220)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+14:25:55.10 (11301921)|SYSTEM_MODE_EXIT|false
+14:25:55.10 (11324894)|METHOD_EXIT|[1]|WarehouseCalloutService
+14:25:55.10 (11339894)|SYSTEM_MODE_ENTER|false
+14:25:55.10 (11345971)|HEAP_ALLOCATE|[9]|Bytes:5
+14:25:55.10 (11351910)|STATEMENT_EXECUTE|[8]
+14:25:55.10 (11354452)|STATEMENT_EXECUTE|[9]
+14:25:55.10 (11374855)|VARIABLE_SCOPE_BEGIN|[9]|http|System.Http|true|false
+14:25:55.10 (11501485)|VARIABLE_ASSIGNMENT|[9]|http|"System.Http[]"|0x7ca79839
+14:25:55.10 (11509455)|STATEMENT_EXECUTE|[10]
+14:25:55.10 (11524280)|VARIABLE_SCOPE_BEGIN|[10]|request|System.HttpRequest|true|false
+14:25:55.10 (11557754)|VARIABLE_ASSIGNMENT|[10]|request|"System.HttpRequest[Endpoint=null, Method=null]"|0x389fd638
+14:25:55.10 (11564199)|STATEMENT_EXECUTE|[11]
+14:25:55.10 (11651411)|STATEMENT_EXECUTE|[12]
+14:25:55.10 (11655703)|HEAP_ALLOCATE|[12]|Bytes:3
+14:25:55.10 (11678298)|STATEMENT_EXECUTE|[13]
+14:25:55.10 (11717211)|CALLOUT_REQUEST|[13]|System.HttpRequest[Endpoint=https://th-superbadge-apex.herokuapp.com/equipment, Method=GET]
+14:25:55.10 (12327235)|EXCEPTION_THROWN|[13]|System.CalloutException: Unauthorized endpoint, please check Setup->Security->Remote site settings. endpoint = https://th-superbadge-apex.herokuapp.com/equipment
+14:25:55.10 (12388715)|HEAP_ALLOCATE|[13]|Bytes:140
+14:25:55.10 (12405303)|SYSTEM_MODE_EXIT|false
+14:25:55.10 (12450296)|FATAL_ERROR|System.CalloutException: Unauthorized endpoint, please check Setup->Security->Remote site settings. endpoint = https://th-superbadge-apex.herokuapp.com/equipment
+
+Class.WarehouseCalloutService.runWarehouseEquipmentSync: line 13, column 1
+14:25:55.10 (12463076)|FATAL_ERROR|System.CalloutException: Unauthorized endpoint, please check Setup->Security->Remote site settings. endpoint = https://th-superbadge-apex.herokuapp.com/equipment
+
+Class.WarehouseCalloutService.runWarehouseEquipmentSync: line 13, column 1
+14:25:55.12 (12471249)|CUMULATIVE_LIMIT_USAGE
+14:25:55.12 (12471249)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 200
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 60000
+  Maximum heap size: 0 out of 12000000
+  Number of callouts: 1 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 1
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:25:55.12 (12471249)|CUMULATIVE_LIMIT_USAGE_END
+
+14:25:55.10 (12502483)|CODE_UNIT_FINISHED|WarehouseCalloutService.runWarehouseEquipmentSync
+14:25:55.10 (13540256)|EXECUTION_FINISHED
